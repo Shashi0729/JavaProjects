@@ -4,34 +4,33 @@ public class TaskRun {
 
 		    public static void main(String[] args) {
 		        String sentence = "Hello World 123";
-
-		        System.out.println("Character count: " + countCharacters(sentence));
-		        System.out.println("Space count: " + countSpaces(sentence));
-		        System.out.println("No spaces: " + removeSpaces(sentence));
+		        countCharacters(sentence);
+		        countSpaces(sentence);
+		        removeSpaces(sentence);
 		        System.out.println("Upper case: " + toUpperCase(sentence));
 		        System.out.println("Lower case: " + toLowerCase(sentence));
 		        System.out.println("Contains digit: " + containsDigit(sentence));
 		    }
 
-		    public static int countCharacters(String sentence) {
+		    public static void countCharacters(String sentence) {
 		        int charCount = 0;
 		        for (char c : sentence.toCharArray()) {
 		            charCount++;
 		        }
-		        return charCount;
+		        System.out.println(charCount); 
 		    }
 
-		    public static int countSpaces(String sentence) {
+		    public static void countSpaces(String sentence) {
 		        int spaceCount = 0;
 		        for (char c : sentence.toCharArray()) {
 		            if (c == ' ') {
 		                spaceCount++;
 		            }
 		        }
-		        return spaceCount;
+		        System.out.println(spaceCount); 
 		    }
 
-		    public static String removeSpaces(String sentence) {
+		    public static void removeSpaces(String sentence) {
 		    	String noSpaces = "";
 		        for (char c : sentence.toCharArray()) {
 		            if (c != ' ') {
@@ -39,7 +38,7 @@ public class TaskRun {
 		            }
 		        }
 		       
-				return noSpaces;
+		        System.out.println(noSpaces); 
 
 		    }
 
