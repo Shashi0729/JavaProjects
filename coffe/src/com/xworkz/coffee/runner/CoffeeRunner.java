@@ -9,8 +9,7 @@ import com.xworkz.coffee.service.CoffeeServices;
 public class CoffeeRunner {
 
 	public static void main(String[] args) {
-		CoffeeDto Coffee1 = new CoffeeDto("Rajesh Cafe", "Btm", 20, 3265758975l, CoffeeFlavors.Caffèmocha,
-				LocalDate.now());
+		CoffeeDto Coffee1 = new CoffeeDto("Rajesh Cafe", "Btm", 20, 3265758975l, CoffeeFlavors.Caffèmocha,LocalDate.now());
 
 		CoffeeServices CoffSer = new CoffeeServices();
 		CoffSer.Onsave(Coffee1);
