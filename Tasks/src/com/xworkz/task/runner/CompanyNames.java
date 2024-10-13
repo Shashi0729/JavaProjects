@@ -27,6 +27,9 @@ public class CompanyNames {
 	        System.out.println(companyNames);
 	        
 	        
+	        System.out.println(companyNames.contains("BMW"));
+	        
+	        
 	        
 	        
 	        
