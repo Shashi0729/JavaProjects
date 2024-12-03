@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<form action="" method="post">
+			<input type="text" placeholder="username" name="username"
+				id="username">
+			<button type="submit" onclick="displayUserName()">Submit</button>
+			<br> <span id="outputname"></span>
+		</form>
+	</div>
+	<script type="text/javascript">
+		function displayUserName() {
+			let name = document.getElementById('username').value;
+			if (name.length < 3) {
+				document.getElementById('outputname').innerHTML = 'username is too short';
+			} else {
+				document.getElementById('outputname').innerHTML = 'username is currect';
+
+			}
+
+		}
+	</script>
+
+</body>
+</html>
