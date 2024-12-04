@@ -10,13 +10,13 @@ public class PaperDto {
     @Value("A4")
     private String size;
     @Value("80")
-    private int gsm; // grams per square meter
+    private int gsm; 
     @Value("White")
     private String color;
     @Value("500")
     private int sheets;
     @Value("50")
-    private int price; // in currency
+    private int price; 
     @Value("Text")
     private String type;
 

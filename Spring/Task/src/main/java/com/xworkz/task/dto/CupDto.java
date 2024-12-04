@@ -16,7 +16,7 @@ public class CupDto {
 	    @Value("1")
 	    private int quantity;
 	    @Value("100")
-	    private int price; // in currency
+	    private int price; 
 	    @Value("Dishwasher Safe")
 	    private String feature;
 }

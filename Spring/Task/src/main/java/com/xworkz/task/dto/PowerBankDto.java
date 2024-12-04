@@ -16,7 +16,7 @@ public class PowerBankDto {
 	    @Value("Lithium-ion")
 	    private String batteryType;
 	    @Value("1500")
-	    private int price; // in currency
+	    private int price; 
 	    @Value("Portable")
 	    private String feature;
 }
