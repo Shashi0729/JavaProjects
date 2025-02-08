@@ -1,0 +1,26 @@
+package com.xworks.airport.configuration;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
+import org.springframework.stereotype.Component;
+import org.springframework.web.servlet.ViewResolver;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
+
+@ComponentScan("com.xworks")
+@Configuration
+public class AirPortConfiguration {
+	@Bean
+	 public  ViewResolver getresponse(){
+		 InternalResourceViewResolver resolver = new InternalResourceViewResolver();
+		 resolver.setSuffix(".jsp");
+		 return resolver;
+	 }
+
+	@Bean
+	public LocalContainerEntityManagerFactoryBean getmanager() {
+		
+		return new LocalContainerEntityManagerFactoryBean();
+}
+}

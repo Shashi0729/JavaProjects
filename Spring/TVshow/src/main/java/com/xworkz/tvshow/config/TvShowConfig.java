@@ -1,8 +1,10 @@
+
 package com.xworkz.tvshow.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
@@ -16,5 +18,11 @@ public class TvShowConfig {
 		 resolver.setSuffix(".jsp");
 		 return resolver;
 	 }
+	
+	@Bean
+	public LocalContainerEntityManagerFactoryBean getmanager() {
+		
+		return new LocalContainerEntityManagerFactoryBean();
+	}
 
 }

@@ -1,0 +1,10 @@
+com\project\entity\UserDetailsEntity.class
+com\project\repo\ProjectRepoImpl.class
+com\project\service\ProjectServiceImpl.class
+com\project\configuration\ProjectWebInit.class
+com\project\configuration\ProjectConfig.class
+com\project\service\ProjectService.class
+com\project\dto\UserDetailsDto.class
+com\project\controller\ProjectController.class
+com\project\repo\ProjectRepo.class
+com\project\util\ProjectUtil.class

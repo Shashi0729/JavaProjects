@@ -2,10 +2,13 @@ package com.xworkz.game.dto;
 
 import java.time.LocalDateTime;
 
-import lombok.Data;
+import org.springframework.stereotype.Component;
 
+import lombok.Data;
+@Component
 @Data
 public class GameDto {
+	private int id;
 private String gameName;
 private String genre;
 private String platform;

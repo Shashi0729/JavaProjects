@@ -6,7 +6,8 @@ import lombok.Data;
 
 @Data
 public class BankDto {
-	
+	private int id;
+
 	private String bankName;
 	private long bankContactNo;
 	private int bankIFSC;
